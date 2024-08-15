@@ -1,24 +1,18 @@
-# jouer-a-deux
-deploying the game on Heroku
+QuiEstCe:
 
-nous avons mit le jeu online dans le cloud de Heroku, pour que le jeu soit disponible online
+1) Hébergement dans le cloud (Heroku) :
+Nous avons préparé le jeu pour qu’il puisse être déployé en ligne sur Heroku.
+L’utilisateur doit suivre ces étapes pour mettre le jeu en ligne : 
+a. Créez un compte sur Heroku.
+b. Installez l’interface en ligne de commande Heroku (Heroku CLI) sur votre ordinateur.
+c. Dans le répertoire du jeu, exécutez les commandes suivantes :     heroku login     heroku create nom-du-joueur     git push heroku master     heroku open
+d. L’URL générée par Heroku vous permettra d’accéder au jeu en ligne.
 
-donc il y a deux possibilité pour tester le jeu
-1) tester le jeu directement online, 
-    Lien du jeu hebérgé dans le cloud heroku: https://jouer-a-deux.herokuapp.com/
-2)tester le jeu en localhost 
-   a) afin de tester le jeu en localhost, vous devez téléchager node.js(si ce n'est pas encore sur votre pc)
-       https://nodejs.org/en/ (windows)
-       nvm install 17.6.0 (buuntu)
-       maintenant vous devez avoir node js version 17.6.0 et npm version 8.5.1
-
-       pour vérifier  node -v    et npm -v .
-         si npm n'est pas a jour: 
-         tapez npm install -g npm@lastest (ubuntu) pour le mise a jour de npm
-   b) aussi nous avos utilisé les sweetalert2 pour gérer les alerts dans notre code javascript
-      donc il faut le télécharger(normalement pas besoin mais ou cas ou...): npm install sweetalert2 
-   c) dès que vous avez téléchargé node.js et les sweetalerts2, localisez vous dans le répertoire du jeu et tapez: node server
-   d) vous allez remarquer dans le terminale que le serveur écoute le port (lestning on) 3000, donc tout marche bien
-   e) ouverez un navigateur et tapez http://127.0.0.1:3000/ (windows), http://localhost:3000/ (linux)
-
-   lien githup de l'extension: https://github.com/AliMohammed232000/jouer-a-deux.git
+2) Tester le jeu en local (localhost) :
+Pour tester le jeu en local, suivez ces étapes :
+a. Téléchargez Node.js si vous ne l’avez pas déjà sur votre ordinateur : Télécharger Node.js (Windows) ou installez-le via NVM (Ubuntu) avec la version 17.6.0.
+b. Vérifiez que vous avez Node.js version 17.6.0 et npm version 8.5.1 en tapant node -v et npm -v.
+c. Mettez npm à jour si nécessaire : npm install -g npm@latest (Ubuntu). b. Nous utilisons également SweetAlert2 pour gérer les alertes dans notre code JavaScript. Vous pouvez le télécharger avec la commande : npm install sweetalert2.
+d. Une fois que vous avez téléchargé Node.js et SweetAlert2, placez-vous dans le répertoire du jeu et exécutez la commande : node server.
+e. Vous verrez dans le terminal que le serveur écoute sur le port 3000, ce qui signifie que tout fonctionne correctement.
+f. Ouvrez un navigateur et accédez au jeu en local via l’URL : http://127.0.0.1:3000/ (Windows) ou http://localhost:3000/ (Linux).
