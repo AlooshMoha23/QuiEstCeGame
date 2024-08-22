@@ -5,7 +5,7 @@ Nous avons préparé le jeu pour qu’il puisse être déployé en ligne sur Her
 L’utilisateur doit suivre ces étapes pour mettre le jeu en ligne :   
 a. Créez un compte sur Heroku.  
 b. Installez l’interface en ligne de commande Heroku (Heroku CLI) sur votre ordinateur.  
-c. Dans le répertoire du jeu, exécutez les commandes suivantes :     heroku login     heroku create nom-du-joueur     git push heroku master     heroku open  
+c. Dans le répertoire du jeu, exécutez les commandes suivantes :     "heroku login"    "heroku create nom-du-joueur"     "git push heroku master"     "heroku open"  
 d. L’URL générée par Heroku vous permettra d’accéder au jeu en ligne.  
 
 # 2) Tester le jeu en local (localhost) :
